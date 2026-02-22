@@ -91,7 +91,7 @@
         }
     </style>
 </head>
-<body class="font-sans text-charcoal bg-brand-50 antialiased selection:bg-brand-300 selection:text-white relative">
+<body class="font-sans text-charcoal bg-brand-50 antialiased selection:bg-brand-300 selection:text-white relative overflow-x-hidden">
 
     <!-- Navigation -->
     <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="navbar">
@@ -105,9 +105,9 @@
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8">
                     <a href="#home" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">Home</a>
-                    <a href="#heritage" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">Heritage</a>
+                    <a href="#about" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">About Us</a>
                     <a href="#collections" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">Collections</a>
-                    <a href="#instagram" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">Social</a>
+                    <a href="#contact" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">Contact</a>
                 </nav>
 
                 <!-- Actions -->
@@ -130,9 +130,9 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
             <div class="px-4 pt-2 pb-6 space-y-1 flex flex-col">
                 <a href="#home" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">Home</a>
-                <a href="#heritage" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">Heritage</a>
+                <a href="#about" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">About Us</a>
                 <a href="#collections" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">Collections</a>
-                <a href="#instagram" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">Social</a>
+                <a href="#contact" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">Contact</a>
                 <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="mt-4 block px-3 py-3 text-center text-base font-medium text-white bg-brand-800 rounded-md hover:bg-brand-700">
                     <i class="fa-brands fa-amazon mr-2"></i> Shop on Amazon
                 </a>
@@ -144,7 +144,7 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="relative h-screen min-h-[600px] flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed mt-10">
-            <div class="absolute inset-0 bg-black/40"></div> <!-- Additional overlay -->
+            <div class="absolute inset-0 bg-black/40"></div>
             <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 fade-in">
                 <span class="block text-brand-300 font-medium tracking-[0.2em] uppercase text-sm mb-4">Established 1962</span>
                 <h2 class="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-lg">
@@ -165,55 +165,69 @@
             
             <!-- Scroll Indicator -->
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <a href="#heritage" class="text-white/70 hover:text-white">
+                <a href="#about" class="text-white/70 hover:text-white">
                     <i class="fa-solid fa-chevron-down text-2xl"></i>
                 </a>
             </div>
         </section>
 
-        <!-- Heritage / About Section -->
-        <section id="heritage" class="py-24 bg-texture bg-brand-50 relative">
+        <!-- About Us Section -->
+        <section id="about" class="py-24 bg-texture bg-brand-50 relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="order-2 lg:order-1 relative fade-in">
                         <div class="absolute -inset-4 border border-brand-300 rounded translate-x-4 translate-y-4 -z-10 hidden md:block"></div>
                         <img src="https://images.unsplash.com/photo-1597954222037-77adcb50f9a4?q=80&w=2070&auto=format&fit=crop" alt="Vintage Knitting" class="w-full h-auto object-cover rounded shadow-xl aspect-[4/5] object-center">
-                        <div class="absolute -bottom-8 -right-8 bg-white p-6 shadow-xl rounded hidden md:block">
+                        <div class="absolute -bottom-8 -right-8 bg-white p-6 shadow-xl rounded hidden md:block border-t-4 border-brand-700">
                             <p class="font-serif text-5xl text-brand-700 mb-1">60+</p>
                             <p class="text-sm font-medium text-gray-500 uppercase tracking-widest">Years of Trust</p>
+                        </div>
+                        <!-- ISO Badge -->
+                        <div class="absolute top-6 -left-6 bg-brand-800 text-white px-6 py-3 shadow-lg rounded hidden md:flex items-center gap-3">
+                            <i class="fa-solid fa-certificate text-2xl text-brand-300"></i>
+                            <div>
+                                <p class="text-xs text-brand-200 uppercase tracking-wider">Certified Company</p>
+                                <p class="font-bold">ISO 9000:2001</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="order-1 lg:order-2 fade-in">
                         <div class="flex items-center gap-4 mb-4">
                             <div class="h-[1px] w-12 bg-brand-500"></div>
-                            <span class="text-brand-600 font-medium uppercase tracking-widest text-sm">Our Story</span>
+                            <span class="text-brand-600 font-medium uppercase tracking-widest text-sm">About Us</span>
                         </div>
                         <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">A Legacy Woven in Every Thread</h2>
-                        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
-                            Since 1962, Graceway has been synonymous with exceptional quality and enduring style. What started as a modest endeavor to provide genuine warmth has grown into a trusted name in premium woolen apparel.
-                        </p>
-                        <p class="text-gray-600 mb-8 leading-relaxed text-lg">
-                            We believe that true comfort never goes out of style. Our garments are meticulously crafted using the finest yarns, blending traditional techniques with contemporary designs to bring you sweaters and cardigans that last a lifetime.
-                        </p>
+                        
+                        <div class="text-gray-600 space-y-4 text-lg leading-relaxed mb-8">
+                            <p>
+                                <strong>G.H.W. Knitwears Pvt. Ltd.</strong>, an ISO 9000:2001 certified organization, has been a distinguished name in the hosiery business under our renowned brand, <strong>GRACEWAY</strong>. Established in 1962 by the late S. Kirpal Singh Chandoke, the company was built upon his extraordinary dedication and visionary approach, introducing numerous pioneering innovations to hosiery production.
+                            </p>
+                            <p>
+                                Today, his son, S. Jagjeet Singh, seamlessly carries the baton forward. By integrating modern techniques with time-honored traditions, he has expanded our portfolio to include world-class winter wear solutions and home furnishing products that meet rigorous global standards.
+                            </p>
+                            <p>
+                                Based in Ludhiana, India, we are a premier custom-made clothing manufacturer and fabrics export house. Graceway is widely recognized in the industry for an uncompromising, quality-driven attitude. We emphasize the strict maintenance of exceptional manufacturing standards for our caps, socks, stoles, shawls, and mufflers.
+                            </p>
+                        </div>
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-                            <div class="flex items-start gap-4">
-                                <div class="bg-brand-100 p-3 rounded-full text-brand-700">
-                                    <i class="fa-solid fa-check-double text-xl"></i>
+                            <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-sm border border-brand-100 hover:border-brand-300 transition-colors">
+                                <div class="bg-brand-50 p-3 rounded-full text-brand-700">
+                                    <i class="fa-solid fa-ranking-star text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-gray-900 mb-1">Premium Quality</h4>
-                                    <p class="text-sm text-gray-500">Sourced from the finest materials for ultimate comfort.</p>
+                                    <h4 class="font-bold text-gray-900 mb-1">Quality Policy</h4>
+                                    <p class="text-sm text-gray-500">Striving for total customer satisfaction via strict quality control and continual improvement.</p>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4">
-                                <div class="bg-brand-100 p-3 rounded-full text-brand-700">
-                                    <i class="fa-solid fa-leaf text-xl"></i>
+                            <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-sm border border-brand-100 hover:border-brand-300 transition-colors">
+                                <div class="bg-brand-50 p-3 rounded-full text-brand-700">
+                                    <i class="fa-solid fa-handshake text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-gray-900 mb-1">Timeless Design</h4>
-                                    <p class="text-sm text-gray-500">Classic styles that transcend seasonal trends.</p>
+                                    <h4 class="font-bold text-gray-900 mb-1">Client Centric</h4>
+                                    <p class="text-sm text-gray-500">Constant supply of premium products at highly competitive prices and timely delivery.</p>
                                 </div>
                             </div>
                         </div>
@@ -222,8 +236,8 @@
             </div>
         </section>
 
-        <!-- Collections Section (Updated with Real Products) -->
-        <section id="collections" class="py-24 bg-brand-50/50">
+        <!-- Collections Section -->
+        <section id="collections" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
                     <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">Featured Accessories</h2>
@@ -231,8 +245,8 @@
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-6 md:gap-8">
-                    <!-- Product Card 1: Women's Gloves -->
-                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col">
+                    <!-- Product Card 1 -->
+                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
                             <img src="https://m.media-amazon.com/images/I/71i2fPIfYCL._AC_UL480_FMwebp_QL65_.jpg" alt="Women's Striped Woolen Gloves" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
@@ -247,8 +261,8 @@
                         </div>
                     </div>
 
-                    <!-- Product Card 2: Unisex Muffler -->
-                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 100ms;">
+                    <!-- Product Card 2 -->
+                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 100ms;">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
                             <img src="https://m.media-amazon.com/images/I/518XkhvA4ML._AC_UL480_FMwebp_QL65_.jpg" alt="Men & Women Muffler" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
@@ -263,8 +277,8 @@
                         </div>
                     </div>
 
-                    <!-- Product Card 3: Kids Cap -->
-                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 200ms;">
+                    <!-- Product Card 3 -->
+                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 200ms;">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
                             <img src="https://m.media-amazon.com/images/I/71pWP8ykfWL._AC_UL480_FMwebp_QL65_.jpg" alt="Kids Unisex Wool Cap" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
@@ -279,8 +293,8 @@
                         </div>
                     </div>
 
-                    <!-- Product Card 4: Men's Socks -->
-                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 100ms;">
+                    <!-- Product Card 4 -->
+                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 100ms;">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
                             <img src="https://m.media-amazon.com/images/I/81AqVqlPBmL._AC_UL480_FMwebp_QL65_.jpg" alt="Men's Woolen Socks" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
@@ -295,8 +309,8 @@
                         </div>
                     </div>
 
-                    <!-- Product Card 5: Leg Warmers -->
-                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 200ms;">
+                    <!-- Product Card 5 -->
+                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 200ms;">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
                             <img src="https://m.media-amazon.com/images/I/71dadwHLlEL._AC_UL480_FMwebp_QL65_.jpg" alt="Unisex Leg Warmers Knee Caps" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
@@ -335,55 +349,95 @@
             </div>
         </section>
 
-        <!-- Instagram/Social Section -->
-        <section id="instagram" class="py-24 bg-brand-50 bg-texture">
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-brand-50 bg-texture relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-12 fade-in">
-                    <div class="max-w-xl">
-                        <div class="flex items-center gap-4 mb-4">
-                            <i class="fa-brands fa-instagram text-2xl text-brand-600"></i>
-                            <span class="text-brand-600 font-medium uppercase tracking-widest text-sm">Join Our Community</span>
-                        </div>
-                        <h2 class="text-4xl font-serif font-bold text-gray-900 mb-4">Follow @graceway1962</h2>
-                        <p class="text-gray-600">Get inspired by how others wear Graceway. Share your winter looks and tag us to be featured.</p>
+                <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                    <div class="flex items-center justify-center gap-4 mb-4">
+                        <div class="h-[1px] w-12 bg-brand-500"></div>
+                        <span class="text-brand-600 font-medium uppercase tracking-widest text-sm">Get in Touch</span>
+                        <div class="h-[1px] w-12 bg-brand-500"></div>
                     </div>
-                    <a href="https://www.instagram.com/graceway1962/" target="_blank" class="hidden md:inline-flex items-center gap-2 border-2 border-brand-800 text-brand-800 px-6 py-3 rounded font-medium hover:bg-brand-800 hover:text-white transition-colors">
-                        Follow on Instagram
-                    </a>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">Contact Information</h2>
+                    <p class="text-gray-600 text-lg">We welcome your inquiries. Please reach out to us at our registered office, manufacturing works, or via direct contact.</p>
                 </div>
 
-                <!-- Simulated Instagram Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
-                    <a href="https://www.instagram.com/graceway1962/" target="_blank" class="relative group aspect-square block overflow-hidden rounded">
-                        <img src="https://images.unsplash.com/photo-1737044281112-f7ce3e43efc9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
+                    <!-- Registered Office Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-brand-300 group-hover:bg-brand-600 transition-colors"></div>
+                        <div class="w-14 h-14 bg-brand-50 text-brand-700 rounded-full flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-regular fa-building"></i>
                         </div>
-                    </a>
-                    <a href="https://www.instagram.com/graceway1962/" target="_blank" class="relative group aspect-square block overflow-hidden rounded">
-                        <img src="https://images.unsplash.com/photo-1633972767447-5098f0322a45?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=2053&auto=format&fit=crop" alt="Instagram Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                        <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Registered Office</h3>
+                        <div class="space-y-4 text-gray-600">
+                            <p class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot mt-1 text-brand-400"></i>
+                                <span>B-V, 1187, Brahampuri<br>Opposite S.B.I. Branch<br>Ludhiana (Pb.) INDIA</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-brand-400"></i>
+                                <div class="flex flex-col">
+                                    <a href="tel:+911612700002" class="hover:text-brand-700 transition-colors">+91 161 2700002</a>
+                                    <a href="tel:+911612700001" class="hover:text-brand-700 transition-colors">+91 161 2700001</a>
+                                </div>
+                            </p>
                         </div>
-                    </a>
-                    <a href="https://www.instagram.com/graceway1962/" target="_blank" class="relative group aspect-square block overflow-hidden rounded">
-                        <img src="https://images.unsplash.com/photo-1645475401635-88f088f224d6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                    </div>
+
+                    <!-- Works Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-brand-300 group-hover:bg-brand-600 transition-colors"></div>
+                        <div class="w-14 h-14 bg-brand-50 text-brand-700 rounded-full flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-industry"></i>
                         </div>
-                    </a>
-                    <a href="https://www.instagram.com/graceway1962/" target="_blank" class="relative group aspect-square block overflow-hidden rounded">
-                        <img src="https://images.unsplash.com/photo-1733652220367-367b63bd68fb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=2072&auto=format&fit=crop" alt="Instagram Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                        <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Manufacturing Works</h3>
+                        <div class="space-y-4 text-gray-600">
+                            <p class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot mt-1 text-brand-400"></i>
+                                <span>Plot No. 20, Jassian Chowk<br>Near Jalandhar Byepass<br>G.T. Road West<br>Ludhiana (Pb.) INDIA</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-brand-400"></i>
+                                <a href="tel:+911612782002" class="hover:text-brand-700 transition-colors">+91 161 2782002</a>
+                            </p>
                         </div>
-                    </a>
-                </div>
-                
-                <div class="mt-8 text-center md:hidden">
-                    <a href="https://www.instagram.com/graceway1962/" target="_blank" class="inline-flex items-center gap-2 border-2 border-brand-800 text-brand-800 px-6 py-3 rounded font-medium hover:bg-brand-800 hover:text-white transition-colors w-full justify-center">
-                        Follow @graceway1962
-                    </a>
+                    </div>
+
+                    <!-- Direct Contact Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-100 hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-brand-300 group-hover:bg-brand-600 transition-colors"></div>
+                        <div class="w-14 h-14 bg-brand-50 text-brand-700 rounded-full flex items-center justify-center mb-6 text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Direct Contact</h3>
+                        <div class="space-y-4 text-gray-600">
+                            <div class="pb-3 border-b border-gray-100">
+                                <p class="font-medium text-gray-900">S. Jagjeet Singh</p>
+                                <p class="flex items-center gap-3 mt-1">
+                                    <i class="fa-solid fa-mobile-screen text-brand-400 shrink-0"></i>
+                                    <a href="tel:+919815070002" class="hover:text-brand-700 transition-colors">+91 98150 70002</a>
+                                </p>
+                            </div>
+                            <div class="pt-1 flex flex-col space-y-2 text-sm">
+                                <a href="mailto:info@gracewayknits.com" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">info@gracewayknits.com</span>
+                                </a>
+                                <a href="mailto:graceway1962@yahoo.co.in" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">graceway1962@yahoo.co.in</span>
+                                </a>
+                                <a href="mailto:jagjeet@gracewayknits.com" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">jagjeet@gracewayknits.com</span>
+                                </a>
+                                <a href="mailto:customercare@gracewayknits.com" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">customercare@gracewayknits.com</span>
+                                </a>
+                                <a href="mailto:sales@gracewayknits.com" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">sales@gracewayknits.com</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -420,13 +474,14 @@
                     <h4 class="font-bold uppercase tracking-wider text-sm mb-6 text-brand-300">Quick Links</h4>
                     <ul class="space-y-3">
                         <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#heritage" class="text-gray-400 hover:text-white transition-colors">Our Story</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
                         <li><a href="#collections" class="text-gray-400 hover:text-white transition-colors">Collections</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                         <li><a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="text-gray-400 hover:text-white transition-colors">Shop Online</a></li>
                     </ul>
                 </div>
 
-                <!-- Contact -->
+                <!-- Contact Short -->
                 <div>
                     <h4 class="font-bold uppercase tracking-wider text-sm mb-6 text-brand-300">Customer Support</h4>
                     <ul class="space-y-3">
@@ -448,7 +503,7 @@
                     &copy; <span id="year"></span> Graceway Knits. All rights reserved. Est. 1962.
                 </p>
                 <div class="flex gap-4 text-sm text-gray-500">
-                    <span>Designed by <a href="https://srijansingh9.github.io/SrijanSingh9/">Srijan Singh</a></span>
+                    <span>Designed by <a href="https://srijansingh9.github.io/SrijanSingh9/" class="hover:text-brand-300 transition-colors">Srijan Singh</a></span>
                 </div>
             </div>
         </div>
