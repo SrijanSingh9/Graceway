@@ -4,20 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>Graceway Knits | Premium Woolen Clothing Since 1962</title>
-    <meta name="description" content="Discover the timeless warmth and elegance of Graceway Knits. Premium woolen sweaters, cardigans, and winter wear crafted with heritage since 1962. Shop our collection.">
-    <meta name="keywords" content="Graceway, Graceway Knits, woolen clothing, sweaters, cardigans, winter wear, buy woolens online, Indian winter wear, heritage knitwear">
-    <meta name="author" content="Graceway Knits">
+    <!-- Advanced SEO Meta Tags -->
+    <title>Graceway Knits | Premium Woolen Clothing & Accessories Since 1962</title>
+    <meta name="description" content="Discover Graceway Knits, crafting premium woolen sweaters, caps, socks, and winter accessories since 1962. ISO 9000:2001 certified manufacturer based in Ludhiana, India. Shop our authentic collection.">
+    <meta name="keywords" content="Graceway, Graceway Knits, woolen clothing, sweaters, cardigans, winter wear, buy woolens online, Indian winter wear, Ludhiana hosiery, heritage knitwear, woolen socks, woolen caps">
+    <meta name="author" content="G.H.W. Knitwears Pvt. Ltd.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gracewayknits.com/">
     
     <!-- Open Graph for Social Media -->
     <meta property="og:title" content="Graceway Knits | Premium Woolen Clothing Since 1962">
-    <meta property="og:description" content="Experience the timeless elegance of premium knitwear. Crafting warmth for generations.">
+    <meta property="og:description" content="Experience the timeless elegance of premium knitwear. Crafting warmth and quality for generations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gracewayknits.com/">
+    <meta property="og:image" content="https://gracewayknits.com/img/logo.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Graceway Knits | Premium Woolen Clothing">
+    <meta name="twitter:description" content="Crafting premium woolen clothing since 1962. Blending heritage, warmth, and modern elegance.">
+    
+    <!-- Schema.org JSON-LD for Local Business / Organization SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "G.H.W. Knitwears Pvt. Ltd. (Graceway Knits)",
+      "url": "https://gracewayknits.com/",
+      "logo": "https://gracewayknits.com/img/logo.jpg",
+      "foundingDate": "1962",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "S. Kirpal Singh Chandoke"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "B-V, 1187, Brahampuri, Opposite S.B.I. Branch",
+        "addressLocality": "Ludhiana",
+        "addressRegion": "Punjab",
+        "postalCode": "141008",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-161-2700002",
+        "contactType": "customer service",
+        "email": "info@gracewayknits.com"
+      },
+      "sameAs": [
+        "https://www.instagram.com/graceway1962/",
+        "https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway"
+      ]
+    }
+    </script>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="https://gracewayknits.com/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://gracewayknits.com/img/favicon.ico">
+    <link rel="apple-touch-icon" href="https://gracewayknits.com/img/logo.jpg">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +89,7 @@
                             400: '#be997d',
                             500: '#ad7e5b',
                             600: '#9e674b',
-                            700: '#83513e', // Primary deep warm color
+                            700: '#83513e', 
                             800: '#6d4436',
                             900: '#58382d',
                         },
@@ -55,7 +100,8 @@
                         serif: ['Playfair Display', 'serif'],
                     },
                     backgroundImage: {
-                        'hero-pattern': "linear-gradient(to right bottom, rgba(45, 45, 45, 0.7), rgba(45, 45, 45, 0.4)), url('https://images.unsplash.com/photo-1605380536296-4876b539a2ea?q=80&w=2070&auto=format&fit=crop')",
+                        // Updated to a beautiful, premium knitted sweater texture for the hero
+                        'hero-pattern': "linear-gradient(to right bottom, rgba(45, 45, 45, 0.8), rgba(45, 45, 45, 0.5)), url('https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=2070&auto=format&fit=crop')",
                         'texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')"
                     }
                 }
@@ -75,7 +121,7 @@
             transform: translateY(0);
         }
         
-        /* Hide scrollbar for a cleaner look but keep functionality */
+        /* Smooth Scrollbar for a cleaner look */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -98,12 +144,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)" aria-label="Go to top">
                     <img src="https://gracewayknits.com/img/logo.jpg" alt="Graceway Knits Logo" class="w-[140px] sm:w-[160px] md:w-[200px] h-auto max-h-[50px] md:max-h-[64px] object-contain mix-blend-multiply">
                 </div>
                 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8">
+                <nav class="hidden md:flex space-x-8" aria-label="Main Navigation">
                     <a href="#home" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">Home</a>
                     <a href="#about" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">About Us</a>
                     <a href="#collections" class="text-gray-600 hover:text-brand-700 font-medium transition-colors text-sm uppercase tracking-wider">Collections</a>
@@ -112,14 +158,14 @@
 
                 <!-- Actions -->
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="bg-brand-800 text-white px-5 py-2.5 rounded hover:bg-brand-700 transition-colors flex items-center gap-2 text-sm font-medium">
+                    <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="bg-brand-800 text-white px-5 py-2.5 rounded hover:bg-brand-700 transition-colors flex items-center gap-2 text-sm font-medium shadow-sm hover:shadow">
                         <i class="fa-brands fa-amazon text-lg"></i> Shop Now
                     </a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-800 focus:outline-none p-2">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-800 focus:outline-none p-2" aria-label="Toggle Navigation">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -127,13 +173,13 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
             <div class="px-4 pt-2 pb-6 space-y-1 flex flex-col">
                 <a href="#home" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">Home</a>
                 <a href="#about" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">About Us</a>
                 <a href="#collections" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">Collections</a>
                 <a href="#contact" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-700 hover:bg-brand-50 rounded-md mobile-link">Contact</a>
-                <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="mt-4 block px-3 py-3 text-center text-base font-medium text-white bg-brand-800 rounded-md hover:bg-brand-700">
+                <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="mt-4 block px-3 py-3 text-center text-base font-medium text-white bg-brand-800 rounded-md hover:bg-brand-700 shadow-md">
                     <i class="fa-brands fa-amazon mr-2"></i> Shop on Amazon
                 </a>
             </div>
@@ -144,20 +190,20 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="relative h-screen min-h-[600px] flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed mt-10">
-            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 bg-black/30"></div>
             <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 fade-in">
-                <span class="block text-brand-300 font-medium tracking-[0.2em] uppercase text-sm mb-4">Established 1962</span>
+                <span class="block text-brand-300 font-medium tracking-[0.2em] uppercase text-sm mb-4 drop-shadow-md">Established 1962</span>
                 <h2 class="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-lg">
                     Crafting Warmth <br/><span class="italic font-light">for Generations</span>
                 </h2>
-                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+                <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto font-light drop-shadow">
                     Experience the timeless elegance and unparalleled comfort of premium knitwear. Designed to embrace you in style.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#collections" class="bg-white text-brand-900 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors duration-300 shadow-lg">
+                    <a href="#collections" class="bg-white text-brand-900 px-8 py-4 rounded font-medium hover:bg-brand-50 transition-colors duration-300 shadow-lg">
                         Explore Collections
                     </a>
-                    <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="bg-transparent border border-white text-white px-8 py-4 rounded font-medium hover:bg-white/10 transition-colors duration-300 flex items-center justify-center gap-2">
+                    <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="bg-black/20 backdrop-blur-sm border border-white text-white px-8 py-4 rounded font-medium hover:bg-white/20 transition-colors duration-300 flex items-center justify-center gap-2 shadow-lg">
                         <i class="fa-brands fa-amazon"></i> Buy on Amazon
                     </a>
                 </div>
@@ -165,8 +211,8 @@
             
             <!-- Scroll Indicator -->
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <a href="#about" class="text-white/70 hover:text-white">
-                    <i class="fa-solid fa-chevron-down text-2xl"></i>
+                <a href="#about" class="text-white/70 hover:text-white" aria-label="Scroll Down">
+                    <i class="fa-solid fa-chevron-down text-2xl drop-shadow-md"></i>
                 </a>
             </div>
         </section>
@@ -177,7 +223,8 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="order-2 lg:order-1 relative fade-in">
                         <div class="absolute -inset-4 border border-brand-300 rounded translate-x-4 translate-y-4 -z-10 hidden md:block"></div>
-                        <img src="https://images.unsplash.com/photo-1597954222037-77adcb50f9a4?q=80&w=2070&auto=format&fit=crop" alt="Vintage Knitting" class="w-full h-auto object-cover rounded shadow-xl aspect-[4/5] object-center">
+                        <!-- Updated to a vintage yarn/knitting image that reflects heritage -->
+                        <img src="https://images.unsplash.com/photo-1597954222037-77adcb50f9a4?q=80&w=2070&auto=format&fit=crop" alt="Vintage Knitting Yarn and Needles" loading="lazy" class="w-full h-auto object-cover rounded shadow-xl aspect-[4/5] object-center">
                         <div class="absolute -bottom-8 -right-8 bg-white p-6 shadow-xl rounded hidden md:block border-t-4 border-brand-700">
                             <p class="font-serif text-5xl text-brand-700 mb-1">60+</p>
                             <p class="text-sm font-medium text-gray-500 uppercase tracking-widest">Years of Trust</p>
@@ -213,7 +260,7 @@
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
                             <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-sm border border-brand-100 hover:border-brand-300 transition-colors">
-                                <div class="bg-brand-50 p-3 rounded-full text-brand-700">
+                                <div class="bg-brand-50 p-3 rounded-full text-brand-700 shrink-0">
                                     <i class="fa-solid fa-ranking-star text-xl"></i>
                                 </div>
                                 <div>
@@ -222,7 +269,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start gap-4 p-4 rounded-lg bg-white shadow-sm border border-brand-100 hover:border-brand-300 transition-colors">
-                                <div class="bg-brand-50 p-3 rounded-full text-brand-700">
+                                <div class="bg-brand-50 p-3 rounded-full text-brand-700 shrink-0">
                                     <i class="fa-solid fa-handshake text-xl"></i>
                                 </div>
                                 <div>
@@ -248,14 +295,14 @@
                     <!-- Product Card 1 -->
                     <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="https://m.media-amazon.com/images/I/71i2fPIfYCL._AC_UL480_FMwebp_QL65_.jpg" alt="Women's Striped Woolen Gloves" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
+                            <img src="https://m.media-amazon.com/images/I/71i2fPIfYCL._AC_UL480_FMwebp_QL65_.jpg" alt="Women's Striped Woolen Gloves" loading="lazy" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
                         <div class="p-6 text-center flex-grow flex flex-col justify-between border-t border-brand-50">
                             <div>
                                 <p class="text-brand-600 text-xs font-bold uppercase tracking-widest mb-2">For Her</p>
                                 <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Striped Woolen Gloves</h3>
                             </div>
-                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
+                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
                                 Shop Item <i class="fa-solid fa-arrow-right text-sm"></i>
                             </a>
                         </div>
@@ -264,14 +311,14 @@
                     <!-- Product Card 2 -->
                     <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 100ms;">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="https://m.media-amazon.com/images/I/518XkhvA4ML._AC_UL480_FMwebp_QL65_.jpg" alt="Men & Women Muffler" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
+                            <img src="https://m.media-amazon.com/images/I/518XkhvA4ML._AC_UL480_FMwebp_QL65_.jpg" alt="Men & Women Muffler" loading="lazy" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
                         <div class="p-6 text-center flex-grow flex flex-col justify-between border-t border-brand-50">
                             <div>
                                 <p class="text-brand-600 text-xs font-bold uppercase tracking-widest mb-2">Unisex</p>
                                 <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Premium Woolen Muffler</h3>
                             </div>
-                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
+                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
                                 Shop Item <i class="fa-solid fa-arrow-right text-sm"></i>
                             </a>
                         </div>
@@ -280,46 +327,62 @@
                     <!-- Product Card 3 -->
                     <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 200ms;">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="https://m.media-amazon.com/images/I/71pWP8ykfWL._AC_UL480_FMwebp_QL65_.jpg" alt="Kids Unisex Wool Cap" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
+                            <img src="https://m.media-amazon.com/images/I/71pWP8ykfWL._AC_UL480_FMwebp_QL65_.jpg" alt="Kids Unisex Wool Cap" loading="lazy" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
                         <div class="p-6 text-center flex-grow flex flex-col justify-between border-t border-brand-50">
                             <div>
                                 <p class="text-brand-600 text-xs font-bold uppercase tracking-widest mb-2">Kids</p>
                                 <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Unisex Wool Cap</h3>
                             </div>
-                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
+                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
                                 Shop Item <i class="fa-solid fa-arrow-right text-sm"></i>
                             </a>
                         </div>
                     </div>
 
                     <!-- Product Card 4 -->
-                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 100ms;">
+                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="https://m.media-amazon.com/images/I/81AqVqlPBmL._AC_UL480_FMwebp_QL65_.jpg" alt="Men's Woolen Socks" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
+                            <img src="https://m.media-amazon.com/images/I/81AqVqlPBmL._AC_UL480_FMwebp_QL65_.jpg" alt="Men's Woolen Socks" loading="lazy" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
                         <div class="p-6 text-center flex-grow flex flex-col justify-between border-t border-brand-50">
                             <div>
                                 <p class="text-brand-600 text-xs font-bold uppercase tracking-widest mb-2">For Him</p>
                                 <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Classic Woolen Socks</h3>
                             </div>
-                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
+                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
                                 Shop Item <i class="fa-solid fa-arrow-right text-sm"></i>
                             </a>
                         </div>
                     </div>
 
                     <!-- Product Card 5 -->
-                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 200ms;">
+                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 100ms;">
                         <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="https://m.media-amazon.com/images/I/71dadwHLlEL._AC_UL480_FMwebp_QL65_.jpg" alt="Unisex Leg Warmers Knee Caps" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
+                            <img src="https://m.media-amazon.com/images/I/71dadwHLlEL._AC_UL480_FMwebp_QL65_.jpg" alt="Unisex Leg Warmers Knee Caps" loading="lazy" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
                         </div>
                         <div class="p-6 text-center flex-grow flex flex-col justify-between border-t border-brand-50">
                             <div>
                                 <p class="text-brand-600 text-xs font-bold uppercase tracking-widest mb-2">Unisex</p>
                                 <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Woolen Leg Warmers</h3>
                             </div>
-                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
+                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
+                                Shop Item <i class="fa-solid fa-arrow-right text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Card 6 -->
+                    <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] group cursor-pointer fade-in bg-brand-50 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-100 overflow-hidden flex flex-col" style="transition-delay: 200ms;">
+                        <div class="relative aspect-[4/5] p-6 bg-white flex items-center justify-center overflow-hidden">
+                            <img src="https://m.media-amazon.com/images/I/71xuksvorXL._AC_UL1500_.jpg" alt="Graceway Ankle Socks Unisex" loading="lazy" class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply">
+                        </div>
+                        <div class="p-6 text-center flex-grow flex flex-col justify-between border-t border-brand-50">
+                            <div>
+                                <p class="text-brand-600 text-xs font-bold uppercase tracking-widest mb-2">Unisex</p>
+                                <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Ankle Socks</h3>
+                            </div>
+                            <a href="https://www.amazon.in/dp/B0GQLWG9LC?ref=cm_sw_r_cso_wa_apan_dp_04DYQKRTCH7FNPD1BGEM" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors group-hover:underline underline-offset-4 mt-auto">
                                 Shop Item <i class="fa-solid fa-arrow-right text-sm"></i>
                             </a>
                         </div>
@@ -327,7 +390,7 @@
                 </div>
 
                 <div class="mt-16 text-center fade-in">
-                    <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="inline-block bg-brand-800 text-white px-10 py-4 rounded font-medium hover:bg-brand-900 transition-colors duration-300 shadow-md">
+                    <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="inline-block bg-brand-800 text-white px-10 py-4 rounded font-medium hover:bg-brand-900 transition-colors duration-300 shadow-md hover:shadow-lg">
                         View Entire Store on Amazon <i class="fa-brands fa-amazon ml-2"></i>
                     </a>
                     <p class="text-sm text-gray-500 mt-4"><i class="fa-solid fa-shield-halved mr-1"></i> Secure checkout and fast delivery via Amazon.in</p>
@@ -338,12 +401,13 @@
         <!-- Call to Action Banner -->
         <section class="py-16 bg-brand-800 text-white relative overflow-hidden">
             <div class="absolute top-0 right-0 -mt-10 -mr-10 opacity-10">
-                <i class="fa-solid fa-fan text-9xl animate-spin-slow" style="animation: spin 20s linear infinite;"></i>
+                <!-- Changed to Snowflake to match the winter brand -->
+                <i class="fa-solid fa-snowflake text-9xl animate-spin-slow" style="animation: spin 25s linear infinite;"></i>
             </div>
             <div class="max-w-4xl mx-auto px-4 text-center relative z-10 fade-in">
                 <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Embrace the Chill with Confidence</h2>
                 <p class="text-brand-100 text-lg mb-8">Upgrade your winter wardrobe with pieces that combine tradition, comfort, and unmatched durability.</p>
-                <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="bg-white text-brand-900 px-8 py-3 rounded font-bold hover:bg-brand-100 transition-colors inline-block">
+                <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="bg-white text-brand-900 px-8 py-3 rounded font-bold hover:bg-brand-100 transition-colors inline-block shadow">
                     Shop The Latest Arrivals
                 </a>
             </div>
@@ -371,17 +435,17 @@
                         </div>
                         <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Registered Office</h3>
                         <div class="space-y-4 text-gray-600">
-                            <p class="flex items-start gap-3">
-                                <i class="fa-solid fa-location-dot mt-1 text-brand-400"></i>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot mt-1 text-brand-400 shrink-0"></i>
                                 <span>B-V, 1187, Brahampuri<br>Opposite S.B.I. Branch<br>Ludhiana (Pb.) INDIA</span>
-                            </p>
-                            <p class="flex items-center gap-3">
-                                <i class="fa-solid fa-phone text-brand-400"></i>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-phone mt-1 text-brand-400 shrink-0"></i>
                                 <div class="flex flex-col">
                                     <a href="tel:+911612700002" class="hover:text-brand-700 transition-colors">+91 161 2700002</a>
                                     <a href="tel:+911612700001" class="hover:text-brand-700 transition-colors">+91 161 2700001</a>
                                 </div>
-                            </p>
+                            </div>
                         </div>
                     </div>
 
@@ -393,14 +457,14 @@
                         </div>
                         <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Manufacturing Works</h3>
                         <div class="space-y-4 text-gray-600">
-                            <p class="flex items-start gap-3">
-                                <i class="fa-solid fa-location-dot mt-1 text-brand-400"></i>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot mt-1 text-brand-400 shrink-0"></i>
                                 <span>Plot No. 20, Jassian Chowk<br>Near Jalandhar Byepass<br>G.T. Road West<br>Ludhiana (Pb.) INDIA</span>
-                            </p>
-                            <p class="flex items-center gap-3">
-                                <i class="fa-solid fa-phone text-brand-400"></i>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-brand-400 shrink-0"></i>
                                 <a href="tel:+911612782002" class="hover:text-brand-700 transition-colors">+91 161 2782002</a>
-                            </p>
+                            </div>
                         </div>
                     </div>
 
@@ -414,26 +478,26 @@
                         <div class="space-y-4 text-gray-600">
                             <div class="pb-3 border-b border-gray-100">
                                 <p class="font-medium text-gray-900">S. Jagjeet Singh</p>
-                                <p class="flex items-center gap-3 mt-1">
+                                <div class="flex items-center gap-3 mt-1">
                                     <i class="fa-solid fa-mobile-screen text-brand-400 shrink-0"></i>
                                     <a href="tel:+919815070002" class="hover:text-brand-700 transition-colors">+91 98150 70002</a>
-                                </p>
+                                </div>
                             </div>
-                            <div class="pt-1 flex flex-col space-y-2 text-sm">
+                            <div class="pt-1 flex flex-col space-y-3 text-sm">
                                 <a href="mailto:info@gracewayknits.com" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
-                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">info@gracewayknits.com</span>
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0 text-center"></i> <span class="break-all">info@gracewayknits.com</span>
                                 </a>
                                 <a href="mailto:graceway1962@yahoo.co.in" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
-                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">graceway1962@yahoo.co.in</span>
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0 text-center"></i> <span class="break-all">graceway1962@yahoo.co.in</span>
                                 </a>
                                 <a href="mailto:jagjeet@gracewayknits.com" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
-                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">jagjeet@gracewayknits.com</span>
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0 text-center"></i> <span class="break-all">jagjeet@gracewayknits.com</span>
                                 </a>
                                 <a href="mailto:customercare@gracewayknits.com" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
-                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">customercare@gracewayknits.com</span>
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0 text-center"></i> <span class="break-all">customercare@gracewayknits.com</span>
                                 </a>
                                 <a href="mailto:sales@gracewayknits.com" class="flex items-center gap-3 hover:text-brand-700 transition-colors">
-                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0"></i> <span class="break-all">sales@gracewayknits.com</span>
+                                    <i class="fa-solid fa-at text-brand-400 w-4 shrink-0 text-center"></i> <span class="break-all">sales@gracewayknits.com</span>
                                 </a>
                             </div>
                         </div>
@@ -457,13 +521,13 @@
                         Crafting premium woolen clothing since 1962. Blending heritage, warmth, and modern elegance for the perfect winter wardrobe.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.instagram.com/graceway1962/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-600 transition-colors">
+                        <a href="https://www.instagram.com/graceway1962/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-600 transition-colors">
+                        <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" aria-label="Amazon Storefront" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors">
                             <i class="fa-brands fa-amazon"></i>
                         </a>
-                        <a href="https://gracewayknits.com/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-600 transition-colors">
+                        <a href="https://gracewayknits.com/" target="_blank" rel="noopener noreferrer" aria-label="Official Website" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors">
                             <i class="fa-solid fa-globe"></i>
                         </a>
                     </div>
@@ -477,7 +541,7 @@
                         <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
                         <li><a href="#collections" class="text-gray-400 hover:text-white transition-colors">Collections</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                        <li><a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="text-gray-400 hover:text-white transition-colors">Shop Online</a></li>
+                        <li><a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Shop Online</a></li>
                     </ul>
                 </div>
 
@@ -491,7 +555,7 @@
                         </li>
                         <li class="flex items-center gap-3 mt-4">
                             <i class="fa-solid fa-store text-gray-400"></i>
-                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" class="text-brand-300 hover:underline">Visit Official Storefront</a>
+                            <a href="https://www.amazon.in/s?srs=18746626031&rh=p_89%3AGraceway" target="_blank" rel="noopener noreferrer" class="text-brand-300 hover:underline">Visit Official Storefront</a>
                         </li>
                     </ul>
                 </div>
@@ -500,10 +564,12 @@
             
             <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-gray-500 text-sm">
-                    &copy; <span id="year"></span> Graceway Knits. All rights reserved. Est. 1962.
+                    &copy; <span id="year"></span> G.H.W. Knitwears Pvt. Ltd. All rights reserved. Est. 1962.
                 </p>
-                <div class="flex gap-4 text-sm text-gray-500">
-                    <span>Designed by <a href="https://srijansingh9.github.io/SrijanSingh9/" class="hover:text-brand-300 transition-colors">Srijan Singh</a></span>
+                <div class="flex flex-col sm:flex-row gap-2 sm:gap-6 text-sm text-gray-500 items-center">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-certificate text-brand-600"></i> ISO 9000:2001 Certified</span>
+                    <span class="hidden sm:block">|</span>
+                    <span>Designed by <a href="https://srijansingh9.github.io/SrijanSingh9/" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:text-brand-300 transition-colors font-medium">Srijan Singh</a></span>
                 </div>
             </div>
         </div>
@@ -511,10 +577,10 @@
 
     <!-- JavaScript for Interactivity -->
     <script>
-        // Set current year in footer
+        // Set current year in footer dynamically
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Mobile Menu Toggle
+        // Mobile Menu Toggle Logic
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -525,22 +591,25 @@
             if(menu.classList.contains('hidden')) {
                 icon.classList.remove('fa-xmark');
                 icon.classList.add('fa-bars');
+                btn.setAttribute('aria-expanded', 'false');
             } else {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-xmark');
+                btn.setAttribute('aria-expanded', 'true');
             }
         });
 
-        // Close mobile menu on link click
+        // Close mobile menu gracefully on link click
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
                 icon.classList.remove('fa-xmark');
                 icon.classList.add('fa-bars');
+                btn.setAttribute('aria-expanded', 'false');
             });
         });
 
-        // Navbar Scroll Effect
+        // Navbar Scroll Effect (Adds shadow and removes transparency on scroll)
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 20) {
@@ -552,7 +621,7 @@
             }
         });
 
-        // Intersection Observer for Fade-In Animation
+        // Intersection Observer for the smooth Fade-In Animations
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -563,15 +632,17 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Stop observing once it's visible
+                    observer.unobserve(entry.target); // Stop observing once it's visible to save performance
                 }
             });
         }, observerOptions);
 
-        // Select all elements with fade-in class
+        // Select all elements with the fade-in class and observe them
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
     </script>
 </body>
 </html>
+
+
